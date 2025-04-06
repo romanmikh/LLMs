@@ -1,0 +1,20 @@
+# ================================== colours ==================================
+
+BLK     = "\033[30m"
+RED     = "\033[31m"
+GRE     = "\033[32m"
+YEL     = "\033[33m"
+BLU     = "\033[34m"
+MAG     = "\033[35m"
+CYA     = "\033[36m"
+WHITE   = "\033[37m"
+RESET   = "\033[0m"
+
+BRIGHT_BLACK   = "\033[90m"
+BRIGHT_RED     = "\033[91m"
+BRIGHT_GREEN   = "\033[92m"
+BRIGHT_YELLOW  = "\033[93m"
+BRIGHT_BLUE    = "\033[94m"
+BRIGHT_MAGENTA = "\033[95m"
+BRIGHT_CYAN    = "\033[96m"
+BRIGHT_WHITE   = "\033[97m"
