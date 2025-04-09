@@ -1,0 +1,16 @@
+**/*__pycache__/
+**/*.pyc
+
+.vscode/
+**/*env/
+
+_unsloth_sentencepiece_temp/
+_unsloth_temporary_saved_buffers/
+.ipynb_checkpoints/
+llama.cpp/
+lora_adapter_backup/
+outputs/
+qwen_download/
+unsloth_compiled_cache/
+
+

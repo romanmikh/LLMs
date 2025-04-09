@@ -12,6 +12,19 @@ curl.exe -X POST http://localhost:11434/api/chat -H "Content-Type: application/j
 
 Run from dir behind LLMs as a module:
 python -m LLMs.llama.llama
+
+
+If running on fresh machine:
+sudo apt update
+sudo apt install curl
+sudo snap install ollama
+ollama run llama3.2 # loop processm, run in separate terminal
+
+venv:
+python3 -m venv myenv
+source myenv/bin/activate
+pip install requests
+
 """
 
 import requests
@@ -63,6 +76,8 @@ def chat_with_model():
             print("GPT:", F"{CYA}{reply}{RESET}")
             history.append({"role": "assistant", "content": reply})
 
+        except requests.exceptions.HTTPError as http_err:
+            print("HTTP error:", response.text)
         except Exception as e:
             print("Error:", e)
 
